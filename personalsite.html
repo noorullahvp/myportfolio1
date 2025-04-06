@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noorullah-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("91vJ-LaKgHmrpgoiF");
+      })();
+</script>
+</head>
+<body>
+     <!--navigation-->
+    <nav>
+       
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main/Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="/IMG-20190110-WA0033.jpg" alt="Noorullah" class="profile-photo">
+            <h1>MUHAMMED NOORULLAH</h1>
+            <p>Software Developer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I am Gradually heading to success by stepping up each level of programming. Some time it will be hardest but not going to give up other time it make me easy but never going to be end.</p>
+            <p>Finding problems are my conserns currently because it makes new oppertunity in socity and even in the personal life.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="/Screenshot_8.png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of your first project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="/Screenshot_10.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of your second project.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button class="btn" onclick="sendmail()">SUBMIT</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> noorullahvp@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +919567111425</p>
+                <!-- Add more contact info as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Noorullah. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Add more social links as needed -->
+        </div>
+    </footer>
+</body>
+</html>
